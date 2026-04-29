@@ -55,6 +55,6 @@ jobs:
               ${{ secrets.DOCKER_USERNAME }}/real-estate-ai-backend
 
             echo "Running frontend..."
-            docker run -d -p 3000:3000 \
+            docker run -d -p 3000:80 \
               --name frontend \
               ${{ secrets.DOCKER_USERNAME }}/real-estate-ai-frontend
