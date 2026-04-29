@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     embeddings_model: str = "text-embedding-3-small"
     embeddings_timeout_seconds: int = 20
     rag_store_path: str = "./.rag_store/listing_chunks.json"
-    cors_origins: str = "http://localhost:5173"
+    cors_origins: str = "http://localhost:3000,http://13.204.14.38:3000"
 
     @property
     def cors_origin_list(self) -> list[str]:
